@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: syesseni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/04 19:38:05 by syesseni          #+#    #+#             */
+/*   Updated: 2019/09/04 19:43:56 by syesseni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-int	get_len(char *str)
+int		get_len(char *str)
 {
-	int	len;
+	int		len;
 
 	len = 0;
 	while (str[len] != '\0')
@@ -13,7 +25,7 @@ int	get_len(char *str)
 char	*ft_strdup(char *src)
 {
 	char	*dest;
-	int	i;
+	int		i;
 
 	i = 0;
 	if (!(dest = (char *)malloc(sizeof(*dest) * get_len(src))))

@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_params.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: syesseni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/04 19:37:11 by syesseni          #+#    #+#             */
+/*   Updated: 2019/09/04 19:54:33 by syesseni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 void	ft_putchar(char c);
 
-int	ft_strcmp(char *s1, char *s2)
+int		ft_strcmp(char *s1, char *s2)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	while (s1[i] == s2[i])
@@ -12,8 +24,8 @@ int	ft_strcmp(char *s1, char *s2)
 
 void	print_params(int argc, char *argv[])
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 
 	i = 1;
 	while (i < argc)
@@ -31,7 +43,7 @@ void	print_params(int argc, char *argv[])
 
 void	main(int argc, char *argv[])
 {
-	int	i;
+	int		i;
 	char	*temp;
 
 	i = 1;
