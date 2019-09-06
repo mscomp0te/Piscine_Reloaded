@@ -6,13 +6,13 @@
 /*   By: syesseni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 19:36:44 by syesseni          #+#    #+#             */
-/*   Updated: 2019/09/04 19:42:10 by syesseni         ###   ########.fr       */
+/*   Updated: 2019/09/04 20:16:46 by syesseni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_recursive_factorial(int nb)
 {
-	if (nb > 12)
+	if (nb > 12 || nb < 0)
 		return (0);
 	else if (nb == 0)
 		return (1);

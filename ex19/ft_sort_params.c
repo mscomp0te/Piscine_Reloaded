@@ -6,7 +6,7 @@
 /*   By: syesseni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 19:37:11 by syesseni          #+#    #+#             */
-/*   Updated: 2019/09/04 19:54:33 by syesseni         ###   ########.fr       */
+/*   Updated: 2019/09/04 20:35:09 by syesseni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_strcmp(char *s1, char *s2)
 	i = 0;
 	while (s1[i] == s2[i])
 		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	return (s1[i] - s2[i]);
 }
 
 void	print_params(int argc, char *argv[])
@@ -41,7 +41,7 @@ void	print_params(int argc, char *argv[])
 	}
 }
 
-void	main(int argc, char *argv[])
+int		main(int argc, char *argv[])
 {
 	int		i;
 	char	*temp;
@@ -59,4 +59,5 @@ void	main(int argc, char *argv[])
 		i++;
 	}
 	print_params(argc, argv);
+	return (0);
 }

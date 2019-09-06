@@ -6,7 +6,7 @@
 /*   By: syesseni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 19:36:15 by syesseni          #+#    #+#             */
-/*   Updated: 2019/09/04 19:36:16 by syesseni         ###   ########.fr       */
+/*   Updated: 2019/09/04 20:22:46 by syesseni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ void	ft_putchar(char c);
 void	ft_is_negative(int n)
 {
 	if (n >= 0)
-		ft_putchar("P");
+		ft_putchar('P');
 	else
-		ft_putchar("N");
+		ft_putchar('N');
 }
